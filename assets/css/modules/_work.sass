@@ -44,9 +44,71 @@
 
         &-description
           display: none
-          max-width: 250px
+          max-width: 700px
           margin: 0 auto
+        
+        &-langages
+         color: #0F33FF
+         font-size: 80%
+         max-width: 600px
+         font-weight: bold
 
+         &__separation
+          color: white
+
+        &-buttons
+         display: flex
+         justify-content: space-evenly
+
+         &__button
+          position: relative
+          padding: 5px 17px 5px 12px
+          background-color: transparent
+          border: none
+          line-height: 30px
+          text-decoration: none
+          color: $white
+          font-weight: 700
+          text-transform: uppercase
+          border: none
+          transition: opacity .4s ease-in-out, visibility 0s .4s
+
+          svg
+           position: relative
+           left: 5px
+           width: 15px
+           fill: #fff
+
+          span
+           position: absolute
+           top: 0
+           left: 23px
+           right: 0
+           height: 100%
+           background-color: $highlight
+           z-index: -1
+           transition: left .2s ease-in-out 
+          &:hover
+           .btn-background
+            left: 0
+          &:focus
+            outline: none
+
+        //  .btn-background2
+        //   position: absolute
+        //   top: 0
+        //   left: 23px
+        //   right: 0
+        //   height: 100%
+        //   background-color: $highlight
+        //   z-index: -1
+        //   transition: left .2s ease-in-out 
+        //  &:hover
+        //   .btn-background2
+        //     left: 0
+        //  &:focus
+        //   outline: none
+            
         &-image
           width: 150px
           height: 150px

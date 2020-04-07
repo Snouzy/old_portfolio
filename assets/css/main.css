@@ -605,6 +605,12 @@ body {
   background-color: transparent;
   border: none;
 }
+.intro--banner button a {
+  color: red;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
 .intro--banner button .btn-background {
   position: absolute;
   top: 0;
@@ -646,7 +652,7 @@ body {
   transition: color 0.2s ease-in-out;
 }
 .intro--options > a#presentation {
-  max-width: 500px;
+  max-width: 580px;
 }
 .intro--options > a:hover {
   color: #fff;
@@ -771,8 +777,56 @@ body {
 }
 .work--lockup .slider--item-description {
   display: none;
-  max-width: 250px;
+  max-width: 700px;
   margin: 0 auto;
+}
+.work--lockup .slider--item-langages {
+  color: #0F33FF;
+  font-size: 80%;
+  max-width: 600px;
+  font-weight: bold;
+}
+.work--lockup .slider--item-langages__separation {
+  color: white;
+}
+.work--lockup .slider--item-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.work--lockup .slider--item-buttons__button {
+  position: relative;
+  padding: 5px 17px 5px 12px;
+  background-color: transparent;
+  border: none;
+  line-height: 30px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  transition: opacity 0.4s ease-in-out, visibility 0s 0.4s;
+}
+.work--lockup .slider--item-buttons__button svg {
+  position: relative;
+  left: 5px;
+  width: 15px;
+  fill: #fff;
+}
+.work--lockup .slider--item-buttons__button span {
+  position: absolute;
+  top: 0;
+  left: 23px;
+  right: 0;
+  height: 100%;
+  background-color: #0f33ff;
+  z-index: -1;
+  transition: left 0.2s ease-in-out;
+}
+.work--lockup .slider--item-buttons__button:hover .btn-background {
+  left: 0;
+}
+.work--lockup .slider--item-buttons__button:focus {
+  outline: none;
 }
 .work--lockup .slider--item-image {
   width: 150px;
