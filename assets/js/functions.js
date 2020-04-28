@@ -8,9 +8,8 @@ $( document ).ready(function() {
   $(this).on('mousewheel DOMMouseScroll', function(e){
 
     if (!($('.outer-nav').hasClass('is-vis'))) {
-
+        console.log('hey');
       e.preventDefault();
-
       var delta = (e.originalEvent.wheelDelta) ? -e.originalEvent.wheelDelta : e.originalEvent.detail * 20;
 
       if (delta > 50 && canScroll) {
@@ -191,12 +190,11 @@ $( document ).ready(function() {
           $center = $('.slider--item-center'),
           $right = $('.slider--item-right'),
           $item = $('.slider--item');
-
       $('.slider').animate({ opacity : 0 }, 400);
 
       setTimeout(function(){
 
-      if ($this.hasClass('slider--next')) {
+      if ($this.hasClass('slider--next')) { 
         if (curLeftPos < totalWorks - 1 && curCenterPos < totalWorks - 1 && curRightPos < totalWorks - 1) {
           $left.removeClass('slider--item-left').next().addClass('slider--item-left');
           $center.removeClass('slider--item-center').next().addClass('slider--item-center');
